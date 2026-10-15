@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Amit Kumar | Aspiring Software Developer</title>
+  <meta
+    name="description"
+    content="Personal portfolio of Amit Kumar, an Aspiring Software Developer pursuing a Diploma in Computer Science & Engineering at ICFAI University, Jharkhand."
+  />
+  <meta
+    name="keywords"
+    content="Amit Kumar, Aspiring Software Developer, Portfolio, Web Development, Python, Flask, ICFAI University Jharkhand, CSE Student"
+  />
+  <meta name="author" content="Amit Kumar" />
+  <meta name="theme-color" content="#030712" />
+
+  <!-- Open Graph / Social Sharing Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Amit Kumar | Aspiring Software Developer" />
+  <meta
+    property="og:description"
+    content="Explore the projects, technical skills, and software development journey of Amit Kumar."
+  />
+  <meta property="og:image" content="assets/amit-photo.jpeg" />
+
+  <!-- Google Fonts: Inter (UI & Prose) and JetBrains Mono (Developer Tags) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Keyboard Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Background Glow Orbs -->
+  <div class="ambient-canvas" aria-hidden="true">
+    <div class="ambient-orb orb-blue"></div>
+    <div class="ambient-orb orb-cyan"></div>
+    <div class="ambient-orb orb-purple"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
+  <!-- ==========================================
+       A. NAVIGATION BAR
+       ========================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand" aria-label="Amit Kumar Home">
+        <span class="brand-monogram">AK</span>
+        <span class="brand-text">
+          <span class="brand-name">Amit Kumar</span>
+          <span class="brand-role">Software Dev</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Mobile-Only Action Inside Drawer -->
+        <div class="nav-mobile-cta">
+          <a
+            href="assets/resume.pdf"
+            class="btn btn-primary btn-full"
+            data-resume-btn
+            download="Amit_Kumar_Resume.pdf"
+          >
+            <span>Download Resume</span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Header Utility Controls -->
+      <div class="nav-actions">
+        <!-- Dark / Light Theme Toggle -->
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle dark or light theme"
+          title="Switch theme"
+        >
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg
+            class="icon icon-sun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg
+            class="icon icon-moon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Desktop Resume Button -->
+        <a
+          href="assets/resume.pdf"
+          class="btn btn-primary btn-sm nav-resume-btn"
+          data-resume-btn
+          download="Amit_Kumar_Resume.pdf"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          type="button"
+          class="mobile-nav-toggle"
+          id="mobile-nav-toggle"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+    <!-- ==========================================
+         B. HERO SECTION
+         ========================================== -->
+    <section class="hero-section section" id="home">
+      <div class="container hero-grid">
+        <!-- Left Column: Intro & CTAs -->
+        <div class="hero-content reveal">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Diploma in CSE Student @ ICFAI University, Jharkhand</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Amit Kumar</span>
+          </h1>
+
+          <p class="hero-subtitle">Aspiring Software Developer</p>
+
+          <p class="hero-description">
+            Based in <strong>Jharkhand, India</strong>, I focus on building clean,
+            responsive web applications and practical digital solutions using
+            <strong>HTML, CSS, JavaScript, Python, Flask,</strong> and relational
+            databases. Passionate about thoughtful UI/UX design and continuous
+            learning.
+          </p>
+
+          <!-- Primary Call-To-Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>Explore My Work</span>
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-lg">
+              <span>Let's Connect</span>
+            </a>
+          </div>
+
+          <!-- Social & Quick Links (Editable Placeholders) -->
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <div class="social-links">
+              <!-- Replace href with your real GitHub URL -->
+              <a
+                href="https://github.com/your-github-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon-link"
+                aria-label="GitHub Profile (Placeholder - update with your username)"
+                title="GitHub: Update with your profile link"
+              >
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Replace href with your real LinkedIn URL -->
+              <a
+                href="https://linkedin.com/in/your-linkedin-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon-link"
+                aria-label="LinkedIn Profile (Placeholder - update with your username)"
+                title="LinkedIn: Update with your profile link"
+              >
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Replace href with your real Email address -->
+              <a
+                href="mailto:your.email@example.com"
+                class="social-icon-link"
+                aria-label="Send Email (Placeholder - update with your email)"
+                title="Email: your.email@example.com (Placeholder)"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Real Profile Photo Composition -->
+        <div class="hero-visual reveal">
+          <div class="photo-showcase">
+            <!-- Animated Gradient Rings & Glow -->
+            <div class="photo-ring ring-outer" aria-hidden="true"></div>
+            <div class="photo-ring ring-inner" aria-hidden="true"></div>
+            <div class="photo-glow" aria-hidden="true"></div>
+
+            <!-- Main Profile Image Frame -->
+            <div class="photo-frame">
+              <img
+                src="assets/amit-photo.jpeg"
+                alt="Portrait of Amit Kumar, Aspiring Software Developer"
+                class="profile-img"
+                data-fallback-target="hero-photo-fallback"
+              />
+              <!-- Graceful Fallback shown automatically if assets/amit-photo.jpg is not added yet -->
+              <div class="photo-fallback" id="hero-photo-fallback" hidden>
+                <div class="fallback-avatar">AK</div>
+                <p class="fallback-title">Amit Kumar</p>
+                <span class="fallback-hint">Add photo at: <code>assets/amit-photo.jpg</code></span>
+              </div>
+            </div>
+
+            <!-- Gentle Floating Badges -->
+            <div class="floating-badge badge-top-left">
+              <span class="badge-icon">💻</span>
+              <div>
+                <strong>Web &amp; Python</strong>
+                <span>Full-Stack Focus</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <span class="badge-icon">🎓</span>
+              <div>
+                <strong>Diploma in CSE</strong>
+                <span>ICFAI University</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         C. ABOUT ME SECTION
+         ========================================== -->
+    <section class="about-section section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">01 // Who I Am</span>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+          <p class="section-subtitle">
+            Combining computer science fundamentals with modern web interfaces and
+            practical backend problem-solving.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Profile Card & Quick Facts -->
+          <div class="about-profile-card glass-card reveal">
+            <div class="about-photo-wrapper">
+              <img
+                src="assets/amit-photo.jpeg"
+                alt="Amit Kumar"
+                class="about-photo"
+                loading="lazy"
+                data-fallback-target="about-photo-fallback"
+              />
+              <div class="photo-fallback about-fallback" id="about-photo-fallback" hidden>
+                <div class="fallback-avatar sm">AK</div>
+                <span class="fallback-hint"><code>assets/amit-photo.jpg</code></span>
+              </div>
+            </div>
+
+            <div class="about-quick-info">
+              <h3 class="about-card-name">Amit Kumar</h3>
+              <p class="about-card-role">Aspiring Software Developer</p>
+
+              <ul class="about-meta-list">
+                <li>
+                  <span class="meta-label">Education:</span>
+                  <span class="meta-value">Diploma in CSE (Pursuing)</span>
+                </li>
+                <li>
+                  <span class="meta-label">Institute:</span>
+                  <span class="meta-value">ICFAI University, Jharkhand</span>
+                </li>
+                <li>
+                  <span class="meta-label">Location:</span>
+                  <span class="meta-value">Jharkhand, India</span>
+                </li>
+                <li>
+                  <span class="meta-label">Core Focus:</span>
+                  <span class="meta-value">Web Dev, Python &amp; UI/UX</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column: Narrative, Interests & Goals -->
+          <div class="about-details reveal">
+            <div class="glass-card about-prose-card">
+              <h3>My Development Story &amp; Goals</h3>
+              <p>
+                Hello! I'm <strong>Amit Kumar</strong>, a Computer Science &amp;
+                Engineering student at <strong>ICFAI University, Jharkhand</strong>.
+                My interest in software development began with curiosity about how
+                websites and digital platforms solve real-world institutional and
+                everyday workflows.
+              </p>
+              <p>
+                Through hands-on project building, I have worked across both
+                frontend interfaces (<strong>HTML, CSS, JavaScript</strong>) and
+                backend logic (<strong>Python, Flask, SQLite, PostgreSQL</strong>).
+                My goal is to grow into a versatile software developer who builds
+                reliable, accessible, and user-friendly applications.
+              </p>
+
+              <!-- Core Interests Pills -->
+              <div class="interests-block">
+                <h4>What Drives Me</h4>
+                <div class="interest-tags">
+                  <span class="tag-pill">Web Development</span>
+                  <span class="tag-pill">Programming</span>
+                  <span class="tag-pill">UI/UX Design</span>
+                  <span class="tag-pill">Building Practical Digital Solutions</span>
+                  <span class="tag-pill">Learning New Technologies</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Attractive Information Cards -->
+            <div class="about-highlights-grid">
+              <div class="glass-card highlight-card">
+                <div class="highlight-icon">🎨</div>
+                <h4>Clean UI/UX Design</h4>
+                <p>
+                  Designing structured, responsive layouts that feel intuitive on both
+                  desktop monitors and mobile screens.
+                </p>
+              </div>
+
+              <div class="glass-card highlight-card">
+                <div class="highlight-icon">⚙️</div>
+                <h4>Practical Engineering</h4>
+                <p>
+                  Connecting frontend interfaces with Python, Flask, and relational
+                  databases to solve real administrative problems.
+                </p>
+              </div>
+
+              <div class="glass-card highlight-card">
+                <div class="highlight-icon">🚀</div>
+                <h4>Continuous Growth</h4>
+                <p>
+                  Consistently strengthening core programming concepts, version
+                  control habits, and software architecture skills.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         D. SKILLS SECTION
+         ========================================== -->
+    <section class="skills-section section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">02 // Technical Stack</span>
+          <h2 class="section-title">My <span class="text-gradient">Skills</span></h2>
+          <p class="section-subtitle">
+            Technologies and developer tools I have actively learned and used in my
+            coursework and projects.
+          </p>
+        </div>
+
+        <!--
+          HOW TO EDIT SKILLS LATER:
+          Simply duplicate any <span class="skill-chip">...</span> inside the relevant
+          category card below when you learn a new technology.
+        -->
+        <div class="skills-grid">
+          <!-- Category 1: Frontend -->
+          <article class="glass-card skill-category-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-category-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3>Frontend Development</h3>
+                <p>Responsive layouts &amp; interactive interfaces</p>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">HTML5</span>
+              <span class="skill-chip">CSS3</span>
+              <span class="skill-chip">JavaScript</span>
+            </div>
+          </article>
+
+          <!-- Category 2: Backend -->
+          <article class="glass-card skill-category-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-category-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <h3>Backend Development</h3>
+                <p>Server-side logic, routing &amp; web applications</p>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">Flask</span>
+            </div>
+          </article>
+
+          <!-- Category 3: Database -->
+          <article class="glass-card skill-category-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-category-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Database Systems</h3>
+                <p>Structured data modeling &amp; queries</p>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">SQLite</span>
+              <span class="skill-chip">PostgreSQL</span>
+            </div>
+          </article>
+
+          <!-- Category 4: Tools -->
+          <article class="glass-card skill-category-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-category-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Developer Tools</h3>
+                <p>Code editing, version control &amp; collaboration</p>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">VS Code</span>
+              <span class="skill-chip">Git</span>
+              <span class="skill-chip">GitHub</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         E. PROJECTS SECTION
+         ========================================== -->
+    <section class="projects-section section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">03 // Featured Work</span>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">
+            Real-world web applications built to solve educational and administrative
+            workflows.
+          </p>
+        </div>
+
+        <!-- Project Category Filter Buttons -->
+        <div class="project-filters reveal" role="tablist" aria-label="Filter projects by category">
+          <button
+            type="button"
+            class="filter-btn active"
+            data-filter="all"
+            role="tab"
+            aria-selected="true"
+          >
+            All Projects
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="web-platform"
+            role="tab"
+            aria-selected="false"
+          >
+            Education &amp; Web Portal
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="management-system"
+            role="tab"
+            aria-selected="false"
+          >
+            Management &amp; Database Systems
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: WingsIT Education and Solutions -->
+          <article
+            class="glass-card project-card reveal"
+            data-category="web-platform management-system"
+          >
+            <div class="project-media">
+              <img
+                src="assets/wingsit-preview.png"
+                alt="Screenshot of WingsIT Education and Solutions website"
+                class="project-img"
+                loading="lazy"
+                data-fallback-target="wingsit-fallback"
+              />
+              <!-- Graceful Fallback Preview if screenshot is not yet added -->
+              <div class="project-fallback" id="wingsit-fallback" hidden>
+                <div class="mockup-window">
+                  <div class="mockup-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="mockup-body">
+                    <span class="mockup-tag">Coaching Institute Platform</span>
+                    <h4>WingsIT Education &amp; Solutions</h4>
+                    <p>Add screenshot at: <code>assets/wingsit-preview.png</code></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-top">
+                <span class="project-type">Educational Web Application</span>
+              </div>
+
+              <h3 class="project-title">WingsIT Education and Solutions</h3>
+
+              <p class="project-description">
+                A coaching institute website featuring a structured course catalog,
+                admission-related functionality, student enquiry workflows, and
+                dedicated student and administrator interfaces.
+              </p>
+
+              <ul class="project-features-list">
+                <li>Interactive course catalog &amp; admission information workflows</li>
+                <li>Student enquiry submission and management handling</li>
+                <li>Role-based student and admin interface views</li>
+              </ul>
+
+              <!-- Technology Tags (Edit freely to match your exact implementation) -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+
+              <!-- Action Links (Replace data-placeholder-link with real URLs when deployed) -->
+              <div class="project-links">
+                <a
+                  href="#projects"
+                  class="btn btn-primary btn-sm"
+                  data-placeholder-link="WingsIT Live Demo URL (Replace href in index.html with your deployed URL)"
+                >
+                  <span>Live Demo</span>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+
+                <a
+                  href="#projects"
+                  class="btn btn-secondary btn-sm"
+                  data-placeholder-link="WingsIT GitHub Repository URL (Replace href in index.html with your repo link)"
+                >
+                  <span>Source Code</span>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: AI-Powered Complaint Management System -->
+          <article
+            class="glass-card project-card reveal"
+            data-category="management-system"
+          >
+            <div class="project-media">
+              <img
+                src="assets/complaint-system-preview.png"
+                alt="Screenshot of AI-Powered Complaint Management System"
+                class="project-img"
+                loading="lazy"
+                data-fallback-target="complaint-fallback"
+              />
+              <!-- Graceful Fallback Preview if screenshot is not yet added -->
+              <div class="project-fallback" id="complaint-fallback" hidden>
+                <div class="mockup-window">
+                  <div class="mockup-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="mockup-body">
+                    <span class="mockup-tag">Issue Tracking &amp; Admin Portal</span>
+                    <h4>AI-Powered Complaint Management System</h4>
+                    <p>Add screenshot at: <code>assets/complaint-system-preview.png</code></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-top">
+                <span class="project-type">Web Application &amp; Database System</span>
+              </div>
+
+              <h3 class="project-title">AI-Powered Complaint Management System</h3>
+
+              <p class="project-description">
+                A complaint management application designed to streamline user
+                complaint registration, real-time status tracking, administrative
+                resolution workflows, and relational database integration.
+              </p>
+
+              <ul class="project-features-list">
+                <li>Structured complaint registration &amp; unique ticket tracking</li>
+                <li>Administrator dashboard for status updates and resolution management</li>
+                <li>
+                  Persistent database storage &amp;
+                  <span>[Placeholder: Describe your specific AI classification/routing feature here]</span>
+                </li>
+              </ul>
+
+              <!-- Technology Tags (Edit freely to match your exact implementation) -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">SQLite / PostgreSQL</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+
+              <!-- Action Links (Replace data-placeholder-link with real URLs when deployed) -->
+              <div class="project-links">
+                <a
+                  href="#projects"
+                  class="btn btn-primary btn-sm"
+                  data-placeholder-link="Complaint System Live Demo URL (Replace href in index.html with your deployed URL)"
+                >
+                  <span>Live Demo</span>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+
+                <a
+                  href="#projects"
+                  class="btn btn-secondary btn-sm"
+                  data-placeholder-link="Complaint System GitHub Repository URL (Replace href in index.html with your repo link)"
+                >
+                  <span>Source Code</span>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         F. EDUCATION SECTION
+         ========================================== -->
+    <section class="education-section section" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">04 // Academic Background</span>
+          <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
+          <p class="section-subtitle">
+            Academic qualifications and computer science training.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Education Item 1: Diploma in CSE -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-status status-active">Pursuing</span>
+                <span class="timeline-date">[Placeholder: 202X – Present]</span>
+              </div>
+              <h3 class="timeline-title">
+                Diploma in Computer Science &amp; Engineering
+              </h3>
+              <p class="timeline-org">ICFAI University, Jharkhand</p>
+              <p class="timeline-desc">
+                Pursuing core computer science coursework covering programming
+                fundamentals, web technologies, relational database management
+                systems, and software application development.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education Item 2: Class 10 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-status status-completed">Completed</span>
+                <span class="timeline-date">[Placeholder: Year of Completion]</span>
+              </div>
+              <h3 class="timeline-title">Secondary School Education (Class 10)</h3>
+              <p class="timeline-org">
+                [Placeholder: School Name &amp; Board, Jharkhand]
+              </p>
+              <p class="timeline-desc">
+                Completed secondary education with a strong foundation in mathematics,
+                science, and computer fundamentals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         G. MY JOURNEY SECTION
+         ========================================== -->
+    <section class="journey-section section" id="journey">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">05 // Developer Roadmap</span>
+          <h2 class="section-title">My <span class="text-gradient">Journey</span></h2>
+          <p class="section-subtitle">
+            Key milestones in my programming education and project development
+            (every date and milestone is easy to customize).
+          </p>
+        </div>
+
+        <div class="timeline-wrapper journey-timeline">
+          <!-- Milestone 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-badge">Stage 01</span>
+                <span class="timeline-date">[Placeholder: Date / Semester 1]</span>
+              </div>
+              <h3 class="timeline-title">Programming &amp; Web Foundations</h3>
+              <p class="timeline-desc">
+                Started my Diploma in CSE at ICFAI University, Jharkhand and learned
+                core problem-solving, HTML5 structure, CSS3 layouts, and JavaScript
+                interactivity.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-badge">Stage 02</span>
+                <span class="timeline-date">[Placeholder: Date / Semester]</span>
+              </div>
+              <h3 class="timeline-title">Backend Development with Python &amp; Flask</h3>
+              <p class="timeline-desc">
+                Expanded into server-side programming using Python and Flask, along
+                with SQLite and PostgreSQL for structured data persistence and user
+                management.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-badge">Stage 03</span>
+                <span class="timeline-date">[Placeholder: Project Milestone Date]</span>
+              </div>
+              <h3 class="timeline-title">
+                Built WingsIT Education &amp; Complaint Management Projects
+              </h3>
+              <p class="timeline-desc">
+                Designed and developed complete web applications—including the
+                <strong>WingsIT Education and Solutions</strong> portal and the
+                <strong>AI-Powered Complaint Management System</strong>—integrating
+                student/admin interfaces with relational databases.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 4 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-badge">Present</span>
+                <span class="timeline-date">Current Focus</span>
+              </div>
+              <h3 class="timeline-title">Refining UI/UX &amp; Full-Stack Architecture</h3>
+              <p class="timeline-desc">
+                Building modern, accessible web interfaces, sharpening Git/GitHub
+                workflows in VS Code, and preparing for software development
+                internships and engineering roles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         H. ACHIEVEMENTS SECTION
+         ========================================== -->
+    <section class="achievements-section section" id="achievements">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">06 // Milestones &amp; Recognition</span>
+          <h2 class="section-title">
+            Achievements &amp; <span class="text-gradient">Certifications</span>
+          </h2>
+          <p class="section-subtitle">
+            Editable cards ready for your verified academic achievements, workshops,
+            and technical certificates.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Achievement Placeholder Card 1 -->
+          <article class="glass-card achievement-card reveal">
+            <div class="achievement-icon">🏆</div>
+            <span class="achievement-tag">[Placeholder: Year / Semester]</span>
+            <h3 class="achievement-title">
+              [Placeholder: Academic / Technical Achievement Title]
+            </h3>
+            <p class="achievement-org">
+              [Placeholder: Issuing Institution or Event Name]
+            </p>
+            <p class="achievement-desc">
+              Replace this placeholder text in <code>index.html</code> with details
+              about a real academic milestone, coding competition, or university
+              recognition.
+            </p>
+          </article>
+
+          <!-- Achievement Placeholder Card 2 -->
+          <article class="glass-card achievement-card reveal">
+            <div class="achievement-icon">📜</div>
+            <span class="achievement-tag">[Placeholder: Issue Date]</span>
+            <h3 class="achievement-title">
+              [Placeholder: Course or Technical Certification Name]
+            </h3>
+            <p class="achievement-org">
+              [Placeholder: Certifying Platform / Organization]
+            </p>
+            <p class="achievement-desc">
+              Replace this placeholder text with your verified certification in Python,
+              Web Development, Database Management, or related coursework.
+            </p>
+          </article>
+
+          <!-- Achievement Placeholder Card 3 -->
+          <article class="glass-card achievement-card reveal">
+            <div class="achievement-icon">💡</div>
+            <span class="achievement-tag">[Placeholder: Event Date]</span>
+            <h3 class="achievement-title">
+              [Placeholder: Workshop / Project Showcase / Hackathon]
+            </h3>
+            <p class="achievement-org">
+              [Placeholder: Organizer / University Department]
+            </p>
+            <p class="achievement-desc">
+              Replace this placeholder text with details about a technical workshop,
+              seminar, or project exhibition you participated in.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         I. RESUME CALLOUT SECTION
+         ========================================== -->
+    <section class="resume-section section" id="resume">
+      <div class="container">
+        <div class="glass-card resume-banner reveal">
+          <div class="resume-banner-content">
+            <span class="section-eyebrow">07 // Curriculum Vitae</span>
+            <h2 class="resume-title">
+              Want a copy of my <span class="text-gradient">Resume?</span>
+            </h2>
+            <p class="resume-description">
+              Download my resume in PDF format to view my education at ICFAI
+              University, Jharkhand, technical skills, and software project details.
+              <span class="resume-hint">
+                (Place your PDF file inside <code>assets/resume.pdf</code> to enable
+                direct download.)
+              </span>
+            </p>
+          </div>
+
+          <div class="resume-banner-actions">
+            <a
+              href="assets/resume.pdf"
+              class="btn btn-primary btn-lg"
+              data-resume-btn
+              download="Amit_Kumar_Resume.pdf"
+            >
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume (PDF)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         J. CONTACT SECTION
+         ========================================== -->
+    <section class="contact-section section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">08 // Get In Touch</span>
+          <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+          <p class="section-subtitle">
+            Have a question, project opportunity, or internship inquiry? Feel free
+            to reach out.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Direct Contact Information Cards -->
+          <div class="contact-info reveal">
+            <div class="glass-card contact-card">
+              <div class="contact-card-icon">📍</div>
+              <div>
+                <h3>Location</h3>
+                <p>Jharkhand, India</p>
+              </div>
+            </div>
+
+            <div class="glass-card contact-card">
+              <div class="contact-card-icon">✉️</div>
+              <div>
+                <h3>Email Address</h3>
+                <p>
+                  <a href="mailto:your.email@example.com" class="contact-link" id="contact-email-display">
+                    [Placeholder: your.email@example.com]
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="glass-card contact-card">
+              <div class="contact-card-icon">💻</div>
+              <div>
+                <h3>GitHub Profile</h3>
+                <p>
+                  <a
+                    href="https://github.com/your-github-username"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                  >
+                    [Placeholder: github.com/your-github-username]
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="glass-card contact-card">
+              <div class="contact-card-icon">🔗</div>
+              <div>
+                <h3>LinkedIn Profile</h3>
+                <p>
+                  <a
+                    href="https://linkedin.com/in/your-linkedin-username"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                  >
+                    [Placeholder: linkedin.com/in/your-linkedin-username]
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Validated Contact Form -->
+          <!--
+            HOW TO ENABLE DIRECT EMAIL DELIVERY ON GITHUB PAGES (FREE):
+            1. Go to https://formspree.io and create a free account.
+            2. Create a new form and copy your Form ID URL (e.g., https://formspree.io/f/xyzabcde).
+            3. Paste that URL into the data-formspree-endpoint="" attribute on the <form> below.
+            If left empty, submitting the validated form honestly opens the visitor's email client
+            with all fields pre-filled instead of faking a backend submission.
+          -->
+          <div class="glass-card contact-form-wrapper reveal">
+            <form
+              id="contact-form"
+              class="contact-form"
+              data-formspree-endpoint=""
+              data-recipient-email="your.email@example.com"
+              novalidate
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="sender-name" class="form-label">Your Name <span aria-hidden="true">*</span></label>
+                  <input
+                    type="text"
+                    id="sender-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Enter your full name"
+                    required
+                    minlength="2"
+                    autocomplete="name"
+                  />
+                  <span class="field-error" id="error-name" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-email" class="form-label">Your Email <span aria-hidden="true">*</span></label>
+                  <input
+                    type="email"
+                    id="sender-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="name@example.com"
+                    required
+                    autocomplete="email"
+                  />
+                  <span class="field-error" id="error-email" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message-subject" class="form-label">Subject <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="message-subject"
+                  name="subject"
+                  class="form-input"
+                  placeholder="Project collaboration / Internship inquiry"
+                  required
+                  minlength="3"
+                />
+                <span class="field-error" id="error-subject" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message-body" class="form-label">Message <span aria-hidden="true">*</span></label>
+                <textarea
+                  id="message-body"
+                  name="message"
+                  rows="5"
+                  class="form-input form-textarea"
+                  placeholder="Write your message here..."
+                  required
+                  minlength="10"
+                ></textarea>
+                <span class="field-error" id="error-message" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-full" id="contact-submit-btn">
+                <span class="btn-text">Send Message</span>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <!-- Form Status Feedback Banner -->
+              <div
+                class="form-status"
+                id="form-status"
+                role="status"
+                aria-live="polite"
+                hidden
+              ></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       K. FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#home" class="brand">
+            <span class="brand-monogram">AK</span>
+            <span class="brand-text">
+              <span class="brand-name">Amit Kumar</span>
+              <span class="brand-role">Aspiring Software Developer</span>
+            </span>
+          </a>
+          <p class="footer-tagline">
+            Diploma in Computer Science &amp; Engineering student at ICFAI
+            University, Jharkhand. Building clean web experiences and practical
+            software solutions.
+          </p>
+        </div>
+
+        <!-- Quick Navigation Links -->
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Back to Top -->
+        <div class="footer-connect">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a
+              href="https://github.com/your-github-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon-link"
+              aria-label="GitHub Profile"
+            >
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com/in/your-linkedin-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon-link"
+              aria-label="LinkedIn Profile"
+            >
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                />
+              </svg>
+            </a>
+            <a
+              href="mailto:your.email@example.com"
+              class="social-icon-link"
+              aria-label="Email Amit Kumar"
+            >
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year">2026</span> Amit Kumar. Built with HTML5,
+          CSS3 &amp; Vanilla JavaScript.
+        </p>
+        <a href="#home" class="footer-top-link">
+          <span>Back to top</span>
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button -->
+  <button
+    type="button"
+    class="back-to-top"
+    id="back-to-top"
+    aria-label="Scroll back to top"
+    title="Back to top"
+  >
+    <svg
+      class="icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Toast Notification Container (Used for placeholder link & resume notices) -->
+  <div
+    class="toast-notification"
+    id="toast-notification"
+    role="status"
+    aria-live="polite"
+    hidden
+  ></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
